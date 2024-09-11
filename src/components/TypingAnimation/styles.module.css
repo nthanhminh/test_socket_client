@@ -1,0 +1,38 @@
+.typing_dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: black;
+    border-radius: 50%;
+    animation: bounce 1.2s infinite ease-in-out both;
+    background-color: #9ed0f2;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+}
+  
